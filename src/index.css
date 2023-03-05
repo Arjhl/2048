@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: "Secular One", sans-serif;
+}
+body {
+  font-size: 2em;
+}
+h1 {
+  font-family: "Climate Crisis", cursive;
+  color: tomato;
+}

@@ -1,0 +1,117 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 10vh;
+  width: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2px;
+  font-size: 1em;
+  border-radius: 10px;
+  border: 2px solid #5b5b5b;
+  transition: all 1s ease-out;
+  font-family: "Secular One", sans-serif;
+}
+.card {
+  display: flex;
+  transition: all 0.5s ease-in;
+}
+
+.card_box {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+  border-radius: 10px;
+}
+.score_reset {
+  display: flex;
+  margin: 2vh 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.score_reset p {
+  font-size: 1.2em;
+}
+.score_reset button {
+  font-size: 0.9em;
+  padding: 1vh;
+  border-radius: 10px;
+  background-color: rgb(162, 158, 158);
+  border: 1px solid rgb(61, 61, 61);
+  cursor: pointer;
+}
+.score_reset button:hover {
+  border: 1px solid rgb(219, 217, 217);
+  /* background-color: red; */
+}
+
+.trans {
+  transition: all 1s ease-in-out;
+}
+.foot {
+  margin: 2vh 0;
+  font-size: 0.7em;
+}
+
+.gameover {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  font-family: "Fredoka One";
+  padding: 20px;
+  background-color: red;
+  font-size: 2em;
+  transform: rotate(-10deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    margin: 0 3vw;
+  }
+  .card_box {
+    font-size: 1em;
+  }
+  .box {
+    font-size: 0.8em;
+    height: 1.8em;
+    width: 1.8em;
+    padding: 0.2em;
+  }
+  .score_reset {
+    margin: 1vh 0;
+  }
+  .score_reset p {
+    font-size: 0.8em;
+  }
+  .score_reset button {
+    font-size: 0.7em;
+    padding: 0.3em;
+  }
+  .card {
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .foot {
+    font-size: 0.5em;
+    text-align: center;
+  }
+  .gameover {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
